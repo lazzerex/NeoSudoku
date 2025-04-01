@@ -94,7 +94,7 @@ The game is built using vanilla JavaScript with no external dependencies. It fea
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/NeoSudoku.git
+git clone https://github.com/lazzerex/NeoSudoku.git
 ```
 
 2. Open `index.html` in your browser or serve through a local web server
