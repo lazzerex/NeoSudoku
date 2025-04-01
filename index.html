@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeoSudoku</title>
+    <link rel="icon" href="https://img.icons8.com/emoji/48/game-die.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- home screen here-->
+    <div class="home-screen">
+        <div class="home-container">
+            <h1 class="home-title">NEOSUDOKU</h1>
+            <span class="logo-underline"></span>
+            
+            <button id="start-game" class="start-button">START GAME</button>
+            
+            <button id="toggle-theme-home" class="theme-button">
+                <span class="theme-icon">🌙</span> TOGGLE THEME
+            </button>
+            
+            <div class="how-to-play-box">
+                <h3>How to Play</h3>
+                <p>Select an empty cell to add a number</p>
+                <p>Fill the grid so each row, column, and 3×3 box contains numbers 1-9</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- game screen here  -->
+    <div class="game-screen" style="display: none;">
+        <div class="container">
+            <header>
+                <div class="top-bar">
+                    <button id="menu-btn" class="menu-btn">☰</button>
+                    <h1>NEOSUDOKU</h1>
+                    <div class="spacer"></div>
+                </div>
+                <span class="logo-underline"></span>
+                <div class="controls">
+                    <button id="new-game">New Game</button>
+                    <button id="check-solution">Check Solution</button>
+                    <div class="timer">Time: <span id="time">0:00</span></div>
+                </div>
+            </header>
+            
+            <main>
+                <div class="game-container">
+                    <div id="board"></div>
+                    <div class="number-pad">
+                        <button class="number">1</button>
+                        <button class="number">2</button>
+                        <button class="number">3</button>
+                        <button class="number">4</button>
+                        <button class="number">5</button>
+                        <button class="number">6</button>
+                        <button class="number">7</button>
+                        <button class="number">8</button>
+                        <button class="number">9</button>
+                        <button class="number clear">Clear</button>
+                    </div>
+                </div>
+            </main>
+
+            <div class="difficulty-selector">
+                <button class="difficulty active" data-level="easy">Easy</button>
+                <button class="difficulty" data-level="medium">Medium</button>
+                <button class="difficulty" data-level="hard">Hard</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Menu panel -->
+    <div class="menu-panel">
+        <div class="menu-header">
+            <h2>Menu</h2>
+            <button id="close-menu">×</button>
+        </div>
+        <div class="menu-content">
+            <button class="menu-item" id="new-game-menu">New Game</button>
+            <button class="menu-item" id="how-to-play">How to Play</button>
+            <button class="menu-item" id="toggle-theme">Toggle Dark Mode</button>
+            <button class="menu-item" id="toggle-hints">Toggle Hints</button>
+            <button class="menu-item" id="about-game">About NeoSudoku</button>
+            <button class="menu-item" id="back-to-home">Back to Home</button>
+        </div>
+    </div>
+    
+    <!-- overlay for menu background here -->
+    <div class="menu-overlay"></div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
