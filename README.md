@@ -2,11 +2,11 @@
 
 A modern implementation of the classic Sudoku puzzle game, featuring a sleek design, dark mode support, and enhanced gameplay features.
 
-<!-- Try it here: https://neosudoku.vercel.app/ -->
+Try it here: https://neo-sudoku.vercel.app/
 
-<!-- add screenshots here when available -->
-<!-- ![Screenshot of Light Mode](screenshot-light.png) -->
-<!-- ![Screenshot of Dark Mode](screenshot-dark.png) -->
+![image](https://github.com/user-attachments/assets/d5f9efad-bcaa-4bc7-9af9-745642493536)
+
+![image](https://github.com/user-attachments/assets/ef9e72a2-aab7-44af-8c5d-31241594a44e)
 
 ## Features
 
@@ -94,7 +94,7 @@ The game is built using vanilla JavaScript with no external dependencies. It fea
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/NeoSudoku.git
+git clone https://github.com/lazzerex/NeoSudoku.git
 ```
 
 2. Open `index.html` in your browser or serve through a local web server
