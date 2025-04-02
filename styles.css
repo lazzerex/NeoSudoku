@@ -404,12 +404,18 @@ button:hover {
 }
 
 /* Number pad styling */
+.number-controls {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    max-width: 500px;
+    justify-content: center;
+}
+
 .number-pad {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 12px;
-    max-width: 400px;
-    width: 100%;
     padding: 1.5rem;
     background: var(--board-bg);
     border-radius: 20px;
@@ -418,6 +424,22 @@ button:hover {
         0 2px 4px -2px rgba(0, 0, 0, 0.05);
     position: relative;
     z-index: 1;
+}
+
+.clear-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background: var(--board-bg);
+    border-radius: 20px;
+    box-shadow: 
+        0 4px 6px -1px rgba(0, 0, 0, 0.05),
+        0 2px 4px -2px rgba(0, 0, 0, 0.05);
+    position: relative;
+    z-index: 1;
+    width: 133px;
+    height: 133px;
 }
 
 .number {
@@ -443,12 +465,16 @@ button:hover {
 }
 
 .number.clear {
-    grid-column: span 2;
     background-color: var(--accent-color);
     color: white;
     font-size: 1.4rem;
     text-transform: uppercase;
     letter-spacing: 1px;
+    aspect-ratio: 1;
+    height: 100px;
+    width: 100px;
+    min-width: unset;
+    padding: 0;
 }
 
 .number.clear:hover {
@@ -558,18 +584,33 @@ button:hover {
         padding: 1rem;
     }
 
+    .number-controls {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
     .number-pad {
+        grid-template-columns: repeat(3, 1fr);
         gap: 8px;
         padding: 1rem;
     }
-
+    
+    .clear-container {
+        padding: 0;
+        width: 106px;
+        height: 106px;
+    }
+    
     .number {
         font-size: 1.5rem;
         min-height: 48px;
         padding: 0.8rem;
     }
-
+    
     .number.clear {
+        height: 80px;
+        width: 80px;
         font-size: 1.2rem;
     }
 
